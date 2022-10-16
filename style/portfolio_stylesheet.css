@@ -1,0 +1,46 @@
+:root {
+    --light-green: #B4D3B2;
+    --dark-green: #182c18;
+}
+
+body{
+    background-image: url(../images/white_grey_grid_background.webp);
+    background-attachment: fixed;
+    background-size: 500px;
+}
+
+div.container-fluid{
+    background-color: var(--light-green);
+}
+
+#menu-item{
+    text-decoration: none;
+    color:var(--dark-green);
+}
+
+#footer{
+    background-color: var(--light-green);
+    padding-top: 30px;
+    padding-bottom: 15px;
+    max-width: 99vw;
+}
+
+#footer-links{
+    text-decoration: none;
+    padding: 0%;
+    margin: 0%;
+    color:var(--dark-green);
+}
+
+#top-8-bit-web{
+    background-color: darkgrey;
+    height: 18px;
+    border: black solid 3px;
+    text-align: right;
+}
+
+#bottom-8-bit-web{
+    background-color: darkgrey;
+    height:10px;
+    border: black solid 3px;
+}

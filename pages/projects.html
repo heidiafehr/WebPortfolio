@@ -6,103 +6,170 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heidi Fehr | Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/portfolio_stylesheet.css">
 </head>
 
 <body>
     <!--This is my menu-->
-    <table>
-        <tr>
-            <td><a href="../portfolio.html">Heidi Fehr</a></td>
-            <td>
-                <p>
-                    <a href="experience_skills.html">Experience & Skills</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="education.html">Education</a>
-                    <a href="contact.html">Contact</a>
-                </p>
-            </td>
-        </tr>
-    </table>
+    <nav class="navbar sticky-topo navbar-expand-lg bg-light" style="padding: 0%;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../portfolio.html">Heidi Fehr</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/experience_skills.html">Experience & Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../pages/projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/education.html">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-    <h1>
+    <h1 style="padding-left:20px">
         My Projects
     </h1>
-    <hr>
+    
 
-    <table>
-        <!--Yelp Review App-->
-        <tr>
-            <td>
-                <img src="../images/yelp_review_app_screenshot.jpg" style="height: 3in;">
-            </td>
-            <td>
-                <h3>Yelp Mobile Applicaiton</h3>
-                <p>Made with: Flutter, Dart</p>
-                <p>
-                    Developed an end-to-end mobile applications with Flutter and Dart.
-                    It features both RESTful and GraphQL API calls to the Yelp Fusion API.
-                    This application also focuses on test driven development (unit, widget, and golden
-                    tests) and dependency injection. Using the user's location, the application generates
-                    the tour screen of lists of restaurants. The user can navigate to a
-                    detailed page by clicking on the tile of the restaurant.
-                </p>
-                <a href="https://github.com/heidiafehr/Yelp_Review_App.git" target="_blank" alt="GitHub Link to Repo">
-                    <img src="../images/GitHub-Mark-64px.png" style="height: 32px;">
-                </a>
-            </td>
-        </tr>
-        <!--15 puzzle-->
-        <tr>
-            <td>
-                <img src="../images/15_puzzle.png" style="width: 3in;">
-            </td>
-            <td>
-                <h3>Interactive 15 Puzzle</h3>
-                <p>Made with: C++</p>
-                <p>
-                    Created an interactive 15 puzzle in the terminal. To implement the board,
-                    the program uses a 2D array of linked lists. This project focuses on
-                    managing linked lists data structure.
-                </p>
-            </td>
-        </tr>
-        <!--sudoku sovler-->
-        <tr>
-            <td>
-                <img src="../images/sudoku_solver_2.png" style="height:3in">
-            </td>
-            <td>
-                <h3>Backtracing Sudoku Solver</h3>
-                <p>Made with: C++</p>
-                <p>
-                    This program computes the solution to a sudoku puzzle using a
-                    recursive back-tracing algorithm. The board of the sudoku puzzle is
-                    implemented by a 2D array. The recurssive algorithm checks by sector, row and column
-                    to see if a number fits. If the number does not fit, it returns false back to the 
-                    previous call to try a new number until the puzzle is solved.
-                </p>
-            </td>
-        </tr>
-    </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="container" id="top-8-bit-web">
+                    <img src="../images/min_max_close.png" style="height: 8px; vertical-align: text-top;">
+                </div>
 
-    <hr>
-    <table>
-        <tr>
-            <td>
-                <a href="https://www.linkedin.com/in/heidi-fehr-a686281bb" target="_blank">
-                    <img src="../images/linkedin_circle.png" style="height: 32px;" alt="LinkedIn">
+                <div class="container" style="border: black solid 3px; background-color: white;">
+                    <table>
+                        <!--Yelp Review App-->
+                        <tr>
+                            <td>
+                                <img src="../images/yelp_review_app_screenshot.jpg" style="height: 3in;">
+                            </td>
+                            <td>
+                                <h3>Yelp Mobile Applicaiton</h3>
+                                <p>Made with: Flutter, Dart</p>
+                                <p>
+                                    Developed an end-to-end mobile applications with Flutter and Dart.
+                                    It features both RESTful and GraphQL API calls to the Yelp Fusion API.
+                                    This application also focuses on test driven development (unit, widget, and golden
+                                    tests) and dependency injection. Using the user's location, the application generates
+                                    the tour screen of lists of restaurants. The user can navigate to a
+                                    detailed page by clicking on the tile of the restaurant.
+                                </p>
+                                <a href="https://github.com/heidiafehr/Yelp_Review_App.git" target="_blank" alt="GitHub Link to Repo">
+                                    <img src="../images/GitHub-Mark-64px.png" style="height: 32px;">
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="container" id="bottom-8-bit-web" style="margin-bottom: 48px;"></div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="container" id="top-8-bit-web">
+                    <img src="../images/min_max_close.png" style="height: 8px; vertical-align: text-top;">
+                </div>
+
+                <div class="container" style="border: black solid 3px; background-color: white;">
+                    <table>
+                        <!--15 puzzle-->
+                        <tr>
+                            <td>
+                                <img src="../images/15_puzzle.png" style="width: 3in;">
+                            </td>
+                            <td>
+                                <h3>Interactive 15 Puzzle</h3>
+                                <p>Made with: C++</p>
+                                <p>
+                                    Created an interactive 15 puzzle in the terminal. To implement the board,
+                                    the program uses a 2D array of linked lists. This project focuses on
+                                    managing linked lists data structure.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="container" id="bottom-8-bit-web" style="margin-bottom: 48px;"></div>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="container" id="top-8-bit-web">
+                    <img src="../images/min_max_close.png" style="height: 8px; vertical-align: text-top;">
+                </div>
+
+                <div class="container" style="border: black solid 3px; background-color: white;">
+                    <table>
+                        <!--sudoku sovler-->
+                        <tr>
+                            <td>
+                                <img src="../images/sudoku_solver_2.png" style="height:3in">
+                            </td>
+                            <td>
+                                <h3>Backtracing Sudoku Solver</h3>
+                                <p>Made with: C++</p>
+                                <p>
+                                    This program computes the solution to a sudoku puzzle using a
+                                    recursive back-tracing algorithm. The board of the sudoku puzzle is
+                                    implemented by a 2D array. The recurssive algorithm checks by sector, row and column
+                                    to see if a number fits. If the number does not fit, it returns false back to the 
+                                    previous call to try a new number until the puzzle is solved.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="container" id="bottom-8-bit-web" style="margin-bottom: 48px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="footer">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4" style="text-align: center;">
+                <p>
+                    Email: heidi.a.fehr@gmail.com
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4" style="text-align: center;">
+                <a href="https://www.linkedin.com/in/heidi-fehr-a686281bb" target="_blank" style="text-decoration: none;">
+                    <img src="../images/linkedin_circle.png" style="height: 32px;">
                 </a>
                 <a href="https://github.com/heidiafehr" target="_blank">
-                    <img src="../images/GitHub-Mark-64px.png" style="height: 32px;" alt="GitHub">
+                    <img src="../images/GitHub-Mark-64px.png" style="height: 32px;">
                 </a>
-            </td>
-        </tr>
-    </table>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4" style="text-align: center;">
+                <p>
+                    <a href="../portfolio.html" id="footer-links">Home</a>
+                    &nbsp;
+                    <a href="../pages/contact.html" id="footer-links">Contact</a>
+                    &nbsp;
+                    <a id="footer-links" href="../downloadables/HeidiFehr_Resume_3_29_2022.pdf" download="HeidiFehr_Resume">
+                        Resume
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
 
-    <p>
-        Email: heidi.a.fehr@gmail.com
-    </p>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
